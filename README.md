@@ -10,3 +10,40 @@
 зберігається знак математичної операції з використанням оператора
 “switch” обчислити результат дії та вивести його за допомогою оператора
 ”print”.
+
+let s: String? = "/"
+let a:Int? = 205
+let b:Int? = 36
+
+func add(_ num1:Int, _ num2:Int){
+    print(num1+num2)
+}
+
+func subt(_ num1:Int, _ num2:Int){
+    print(num1-num2)
+}
+
+func multiply(_ num1:Int, _ num2:Int){
+    print(num1*num2)
+}
+
+func div(_ num1:Int,  _ num2:Int){
+    if b != 0{
+        print(num1/num2)
+    }
+}
+
+if let s = s, let a = a, let b = b{
+    switch s{
+        case "+":
+        add(a, b)
+        case "-":
+        subt(a, b)
+        case "*":
+        multiply(a, b)
+        case "/":
+        div(a, b)
+        default:
+        print("error")
+    }
+}
