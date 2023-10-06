@@ -22,7 +22,7 @@ switch s
    print(result) case "*": 
    let result = multiply(a, b) 
    print(result) case "/": do{
-     try let result = try div(a, b) 
+    try let result = div(a, b) 
    print(result)    
    } catch MyError.runtimeError(let msg) { print(msg) }
    default: print("error") 
